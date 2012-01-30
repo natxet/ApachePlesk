@@ -1,0 +1,8 @@
+You have to name your config file:
+    /var/wwww/vhosts/example.com/conf/vhost.conf
+
+After doing so, you need to regenerate the apache config file from plesk:
+    /usr/local/psa/admin/sbin/websrvmng -u --vhost-name=example.com
+
+And afterwards reload apache configuration:
+    /etc/init.d/httpd reload
